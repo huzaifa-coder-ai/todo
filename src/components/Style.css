@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+    margin:6rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 9px;
+    box-shadow: 0 8px 11px rgba(22, 22, 22, 0.3);
+}
+
+h2{
+    color: rgb(104, 69, 168);
+    margin: 1rem;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 40px;
+    border: 1px solid rgb(104, 69, 168);
+    outline: none;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+input::placeholder{
+    font-size: 1rem;
+}
+input:focus{
+    outline: 1px solid rgb(104, 69, 168);
+}
+button{
+    margin: 2rem auto;
+    padding: 1rem 2.4rem;
+    font-size: 1.4rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: rgb(104, 69, 168);
+    font-weight: 900;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(135, 105, 192);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+h3{
+    margin: 1rem;
+    color: rgb(104, 69, 168);
+    font-size: 1.6rem;
+}
+ul{
+    margin: 1rem;
+    background-color: rgb(135, 105, 192);
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    font-weight: 600;
+    list-style: none;
+}

@@ -9,20 +9,20 @@ const Card = () => {
     const submitHandler =  (e) => { 
         e.preventDefault()
 
-        
-     }
-
-     const submitTodo = () => {
         if(inputVal == ''){
             alert("Add atleast One Task")
             
         }
         else{
-            settodos([inputVal])
-            console.log(inputVal)
-            
+
+            settodos([...todos,inputVal])  
+               
         }
-        
+ 
+     }
+
+     const deleteBtn = () =>{
+
      }
 
   return (
@@ -35,11 +35,11 @@ const Card = () => {
             setinputVal(e.target.value)
          }}
          type="text" placeholder='Write Your Task here...' />
-        <button type='submit' onClick={() => { submitTodo() }}>Add Task</button>
+        <button type='submit'>Add Task</button>
         <h3>My ToDo's :</h3>
         <ul>
         {todos.map((todo)=>{
-            <li>{todo}</li>
+        return  <li>{todo}  <i onClick={deleteBtn} className="fa-solid fa-trash"></i>  </li>
         })
             
         }

@@ -76,7 +76,28 @@ li{
     display: flex;
     justify-content: space-between;
 }
-i{
+#del{
     cursor: pointer;
     margin-top: 0.2rem;
+}
+.flex{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#edit{
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color: rgb(135, 105, 192);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+#edit:hover{
+    color: rgb(104, 69, 168);
+}
+#edit:active{
+    transform: scale(0.98);
+}
+#del:active{
+    transform: scale(0.96);
 }
